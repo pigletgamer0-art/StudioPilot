@@ -1,19 +1,20 @@
-# StudioPilot 1.1 DEV
+# StudioPilot 1.2 DEV
 
-Asistente de IA para Roblox Studio. Este repositorio está en preparación para recibir el código fuente de StudioPilot 1.1.
+Asistente de IA para Roblox Studio. Esta rama contiene la documentación de la nueva versión 1.2 mientras el paquete completo se valida antes de pasar a main.
 
-## Estado
+## Novedades
 
-La versión 1.1 DEV incluye, en el paquete local del proyecto, equipo de agentes, jugador automático limitado, constructor visual, laboratorio de ideas, análisis de seguridad y optimización y memoria avanzada. **El código fuente aún no se ha subido a este repositorio; este README es únicamente el archivo de inicialización.**
+- Project Brain y grafo local de dependencias.
+- Auto-Test Loop con reparación preparada tras un FAIL, sin aplicar cambios a escondidas.
+- Visual Diff / UI Autopilot.
+- Watchtower, contratos estructurales y checkpoints locales.
+- Security + Performance Lab, Device Audit y Release Doctor.
+- Equipo de 7 roles, Debate IA, modo Experimento y contexto inteligente.
+- Issue Tracker, replays declarativos, documentación y asesor de migraciones.
+- Toolbox revisable para Decal, Texture, Sound, ParticleEmitter, PointLight y Highlight.
 
-Las pruebas automatizadas de Python son independientes de las pruebas dentro de Roblox Studio. No se ha validado el plugin en Studio ni con una API comercial real.
+## Estado real
 
-## Instalación prevista
+El motor Python supera 118 pruebas automatizadas en el entorno de desarrollo. El plugin Luau, StudioTestService, StudioCaptureService y la carga de assets todavía deben probarse dentro de Roblox Studio antes de marcar 1.2 como estable.
 
-Python 3.10+, Roblox Studio para PC y una clave de API propia del proveedor elegido. No incluyas claves de API ni datos privados al contribuir.
-
-El plugin `StudioPilot.plugin.luau` se instala localmente y el servidor Python escucha en `127.0.0.1:8765`.
-
-## Próximos pasos
-
-Subir el código fuente completo de la versión 1.1, ejecutar pruebas automatizadas en GitHub Actions y publicar un paquete descargable cuando el proyecto esté verificado.
+El Toolbox nunca aplica un asset directamente: genera una propuesta que conserva el preflight, la aprobación y ChangeHistoryService.
