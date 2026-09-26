@@ -1,20 +1,19 @@
-# StudioPilot 1.2 DEV
+# StudioPilot 1.3 DEV
 
-Asistente de IA para Roblox Studio. Esta rama contiene la documentación de la nueva versión 1.2 mientras el paquete completo se valida antes de pasar a main.
+Rama de desarrollo para la versión 1.3.
 
 ## Novedades
 
-- Project Brain y grafo local de dependencias.
-- Auto-Test Loop con reparación preparada tras un FAIL, sin aplicar cambios a escondidas.
-- Visual Diff / UI Autopilot.
-- Watchtower, contratos estructurales y checkpoints locales.
-- Security + Performance Lab, Device Audit y Release Doctor.
-- Equipo de 7 roles, Debate IA, modo Experimento y contexto inteligente.
-- Issue Tracker, replays declarativos, documentación y asesor de migraciones.
-- Toolbox revisable para Decal, Texture, Sound, ParticleEmitter, PointLight y Highlight.
+- Toolbox Pro con 17 tipos.
+- Presets y packs de hasta 8 elementos.
+- Uso de la selección actual de Roblox Studio como padre.
+- Modos Seguro, Creativo, Mobile First y Rendimiento.
+- IA Director local sin consulta externa.
+- Quality Gate consolidado.
+- Nuevas clases UI, VFX, luces y SurfaceAppearance dentro de una allowlist cerrada.
 
 ## Estado real
 
-El motor Python supera 118 pruebas automatizadas en el entorno de desarrollo. El plugin Luau, StudioTestService, StudioCaptureService y la carga de assets todavía deben probarse dentro de Roblox Studio antes de marcar 1.2 como estable.
+El motor Python del paquete local supera 127 pruebas automatizadas. La ejecución del plugin Luau, la carga de assets, UIShadow, SurfaceAppearance y las pruebas Play siguen pendientes dentro de Roblox Studio antes de considerar 1.3 estable.
 
-El Toolbox nunca aplica un asset directamente: genera una propuesta que conserva el preflight, la aprobación y ChangeHistoryService.
+El código fuente completo actualizado está empaquetado en StudioPilot_v1_3_dev.zip en la conversación; esta rama todavía no se presenta como una sincronización completa del paquete.
